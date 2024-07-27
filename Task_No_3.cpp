@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 class Blood_Pressure
@@ -45,7 +46,7 @@ public:
 	{
 		int u, l;
 		cout << "Enter patient name : ";
-		cin >> name;
+	    getline(cin , name);
 		cout << "Enter upper BP : ";
 		cin >> u; 
 		BP.set_uBP(u);
